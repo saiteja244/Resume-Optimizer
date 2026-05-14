@@ -39,8 +39,7 @@ An AI-powered full-stack web application that analyzes and optimizes resumes to 
 ## 📁 Project Structure
 
 ```bash
-resume-optimizer/
-│
+
 resume-optimizer/
 ├── frontend/                  ← React app (what user sees)
 │   ├── src/
