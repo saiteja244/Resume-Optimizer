@@ -41,21 +41,32 @@ An AI-powered full-stack web application that analyzes and optimizes resumes to 
 ```bash
 resume-optimizer/
 │
-├── frontend/
-│   ├── public/
+resume-optimizer/
+├── frontend/                  ← React app (what user sees)
 │   ├── src/
-│   ├── package.json
-│   └── vite.config.js
+│   │   ├── components/
+│   │   │   ├── UploadSection.jsx    ← file upload UI
+│   │   │   ├── ResultsSection.jsx   ← shows optimized resume
+│   │   │   └── SectionCard.jsx      ← each resume section
+│   │   ├── services/
+│   │   │   └── api.js               ← talks to backend
+│   │   └── App.jsx                  ← main component
+│   ├── .env                         ← frontend config
+│   └── vite.config.js               ← Vite config
 │
-└── backend/
-    ├── config/
-    ├── controllers/
-    ├── middleware/
-    ├── models/
-    ├── routes/
-    ├── .env
-    ├── package.json
-    └── server.js
+├── backend/                   ← Express server (logic)
+│   ├── config/
+│   │   └── db.js              ← MongoDB connection
+│   ├── models/
+│   │   └── Resume.js          ← database schema
+│   ├── routes/
+│   │   └── resume.js          ← API endpoints
+│   ├── controllers/
+│   │   └── resumeController.js ← business logic
+│   ├── server.js              ← entry point
+│   └── .env                   ← secrets
+│
+└── vercel.json                ← deployment config
 ```
 
 ---
