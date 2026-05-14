@@ -5,7 +5,12 @@ const connectDB    = require("./config/db");
 const resumeRoutes = require("./routes/resume");
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin:[
+    "http://localhost:5173",
+    /\.vercel\.app$/,
+  ],
+  credentials: true,
+             }));
 app.use(express.json({ limit: "5mb" }));
 app.use("/api/resumes", resumeRoutes);
 
