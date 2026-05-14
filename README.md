@@ -10,8 +10,9 @@ A full-stack AI-powered resume optimizer that enhances your resume to be ATS-fri
 
 ## Project Structure
 resume-optimizer/
-├── frontend/
-└── backend/
+
+  ├── frontend/
+  └── backend/
 
 ## Setup Instructions
 
