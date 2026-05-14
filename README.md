@@ -9,11 +9,9 @@ A full-stack AI-powered resume optimizer that enhances your resume to be ATS-fri
 - **AI:** Groq (Llama 3.3 70B)
 
 ## Project Structure
-resume-optimizer/
-
-  ├── frontend/
-  └── backend/
-
+resume optimizer
+├── frontend
+└── backend
 ## Setup Instructions
 
 ### Backend
